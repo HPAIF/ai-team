@@ -1,5 +1,27 @@
 # Adding a team member
 
+## Local development layout
+
+Clone the catalog repository and put every member repository **inside** it; the catalog's
+`.gitignore` ignores `/ai-*/` and `/.github/`, so each folder still commits and pushes to its own
+repository:
+
+```
+HPAIF/                 ← HPAIF/ai-team (catalog, docs)
+├── ai-lawyer/         ← HPAIF/ai-lawyer
+├── ai-accountant/     ← HPAIF/ai-accountant
+└── .github/           ← HPAIF/.github (organization profile)
+```
+
+```bash
+git clone git@github.com:HPAIF/ai-team.git HPAIF && cd HPAIF
+git clone git@github.com:HPAIF/ai-lawyer.git
+git clone git@github.com:HPAIF/ai-accountant.git
+git clone git@github.com:HPAIF/.github.git
+```
+
+## A new member
+
 Use `ai-lawyer` as the reference implementation. A new member (e.g. `ai-cto`, `ai-devops`,
 `ai-security`) is a new repository with this shape:
 

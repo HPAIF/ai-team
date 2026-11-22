@@ -24,6 +24,24 @@ and write the paths described here, so agents built separately still fit togethe
     └── <member>/                 every future member gets its own folder
 ```
 
+### Company with several products (recommended)
+
+Members look for `ai-team/` in the folder Claude is opened in **and in every parent folder**, so
+one company-level workspace serves all products:
+
+```
+<company>/                         ← private company repository (e.g. <org>/company)
+├── .claude/settings.json          enables the AI Team plugins for the company
+├── CLAUDE.md                      what the company is, where the products are
+├── ai-team/                       the workspace (this contract)
+└── projects/
+    ├── <product-a>/               its own repository (ignored by the company repo)
+    └── <product-b>/
+```
+
+Open Claude in `<company>/` for company work, or in `projects/<product-a>/` while building — the
+members find the same `ai-team/` either way.
+
 Each member folder always contains:
 
 | Path | Purpose |

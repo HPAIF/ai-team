@@ -3,8 +3,8 @@
   "name": "ai-team",
   "description": "AI Team — Claude Code agents that work together for a founder's company: lawyer, accountant, and more to come. Each agent is its own plugin; they share one private workspace in your project.",
   "owner": {
-    "name": "AI Agents Factory",
-    "url": "https://github.com/aiagents-factory"
+    "name": "HPAIF",
+    "url": "https://github.com/HPAIF"
   },
   "plugins": [
     {
@@ -13,9 +13,9 @@
       "category": "business",
       "source": {
         "source": "github",
-        "repo": "aiagents-factory/ai-lawyer"
+        "repo": "HPAIF/ai-lawyer"
       },
-      "homepage": "https://github.com/aiagents-factory/ai-lawyer"
+      "homepage": "https://github.com/HPAIF/ai-lawyer"
     },
     {
       "name": "ai-accountant",
@@ -23,9 +23,9 @@
       "category": "business",
       "source": {
         "source": "github",
-        "repo": "aiagents-factory/ai-accountant"
+        "repo": "HPAIF/ai-accountant"
       },
-      "homepage": "https://github.com/aiagents-factory/ai-accountant"
+      "homepage": "https://github.com/HPAIF/ai-accountant"
     }
   ]
 }

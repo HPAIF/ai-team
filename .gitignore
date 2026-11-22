@@ -1,1 +1,5 @@
 .DS_Store
+# Local development layout: the agent repos and the org profile repo are cloned INSIDE this
+# folder but are separate repositories (see docs/adding-a-member.md). Never commit them here.
+/ai-*/
+/.github/

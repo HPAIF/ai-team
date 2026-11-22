@@ -67,8 +67,8 @@ A member's SessionStart hook prints its memory (deadlines, recent jobs, stale ca
 learnings) only when `ai-team/<member>/` exists, so installing the plugin globally costs nothing
 in other projects.
 
-## DD-10 · Hosted in the `aiagents-factory` organization
-Members live in the GitHub organization **aiagents-factory** (one repository per member, plus
+## DD-10 · Hosted in the `HPAIF` organization
+Members live in the GitHub organization **HPAIF** (one repository per member, plus
 `ai-team` as the catalog and `.github` for the organization profile). An organization gives the
 team its own identity and a clean install address, room for many members and co-maintainers, and
 independence from any one personal account. Authorship stays with the people who write it.

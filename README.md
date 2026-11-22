@@ -6,8 +6,8 @@ knows what the accountant registered and the other way round.
 
 | Member | Plugin | What it does | Status |
 |---|---|---|---|
-| ⚖️ Lawyer | [ai-lawyer](https://github.com/aiagents-factory/ai-lawyer) | legal research with verified official sources, contract review, legal history, legal watch | 0.1 |
-| 🧮 Accountant | [ai-accountant](https://github.com/aiagents-factory/ai-accountant) | tax & accounting research, document registers, month-end close, tax watch | 0.1 |
+| ⚖️ Lawyer | [ai-lawyer](https://github.com/HPAIF/ai-lawyer) | legal research with verified official sources, contract review, legal history, legal watch | 0.1 |
+| 🧮 Accountant | [ai-accountant](https://github.com/HPAIF/ai-accountant) | tax & accounting research, document registers, month-end close, tax watch | 0.1 |
 | 🛠️ Technical members | — | CTO / developer / DevOps / security agents | planned |
 
 > These agents research, prepare, track and warn. They are **not** licensed lawyers or certified
@@ -18,7 +18,7 @@ knows what the accountant registered and the other way round.
 In Claude Code, add this catalog once, then install the members you want:
 
 ```
-/plugin marketplace add aiagents-factory/ai-team
+/plugin marketplace add HPAIF/ai-team
 /plugin install ai-lawyer@ai-team
 /plugin install ai-accountant@ai-team
 ```
@@ -31,7 +31,7 @@ Share the team with everyone working on a project by committing `.claude/setting
 ```json
 {
   "extraKnownMarketplaces": {
-    "ai-team": { "source": { "source": "github", "repo": "aiagents-factory/ai-team" } }
+    "ai-team": { "source": { "source": "github", "repo": "HPAIF/ai-team" } }
   },
   "enabledPlugins": {
     "ai-lawyer@ai-team": true,
