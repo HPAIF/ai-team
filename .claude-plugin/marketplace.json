@@ -1,0 +1,31 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "ai-team",
+  "description": "AI Team — Claude Code agents that work together for a founder's company: lawyer, accountant, and more to come. Each agent is its own plugin; they share one private workspace in your project.",
+  "owner": {
+    "name": "AI Agents Factory",
+    "url": "https://github.com/aiagents-factory"
+  },
+  "plugins": [
+    {
+      "name": "ai-lawyer",
+      "description": "In-house legal research assistant: verifies every law against official sources, reviews contracts, keeps legal history, watches legal changes, improves itself. Not a licensed lawyer.",
+      "category": "business",
+      "source": {
+        "source": "github",
+        "repo": "aiagents-factory/ai-lawyer"
+      },
+      "homepage": "https://github.com/aiagents-factory/ai-lawyer"
+    },
+    {
+      "name": "ai-accountant",
+      "description": "In-house accounting & tax assistant: verifies every rule against official sources, registers documents, keeps the books' memory, month-end close, tax watch, improves itself. Never files, pays or signs.",
+      "category": "business",
+      "source": {
+        "source": "github",
+        "repo": "aiagents-factory/ai-accountant"
+      },
+      "homepage": "https://github.com/aiagents-factory/ai-accountant"
+    }
+  ]
+}
