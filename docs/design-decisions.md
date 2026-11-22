@@ -72,3 +72,20 @@ Members live in the GitHub organization **HPAIF** (one repository per member, pl
 `ai-team` as the catalog and `.github` for the organization profile). An organization gives the
 team its own identity and a clean install address, room for many members and co-maintainers, and
 independence from any one personal account. Authorship stays with the people who write it.
+
+## DD-11 · A team lead as the single entry point
+- **Problem:** with many members, the founder should not have to pick the right agent or check
+  each member's deadlines separately.
+- **Choice:** `ai-lead` routes every request to the installed members (Agent tool), combines their
+  answers with conflicts shown, and keeps one board, one agenda and one company inbox. It never
+  replaces a specialist and never approves anything on the founder's behalf.
+
+## DD-12 · Basic members first, specialised later
+CTO, DevOps, Security, Product, Marketing and Sales ship as 0.1 "basic" members built from short
+role research (`docs/research.md` in each repo); they are specialised through use, learnings and
+the `improve` flow. New members start from `ai-member-template`.
+
+## DD-13 · Messenger drives the Claude Code CLI
+The macOS messenger (MVP) runs `claude -p --agent <member> --output-format stream-json` headless,
+so it uses the founder's own Claude login, installed plugins and workspace permissions; no API key
+or separate backend. Conversations are stored locally only.

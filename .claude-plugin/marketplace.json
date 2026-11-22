@@ -1,12 +1,22 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "ai-team",
-  "description": "AI Team — Claude Code agents that work together for a founder's company: lawyer, accountant, and more to come. Each agent is its own plugin; they share one private workspace in your project.",
+  "description": "AI Team: Claude Code agents that work together for a founder's company: a team lead (single entry point) plus lawyer, accountant, CTO, DevOps, security, product, marketing and sales. Each agent is its own plugin; they share one private workspace in your project.",
   "owner": {
     "name": "HPAIF",
     "url": "https://github.com/HPAIF"
   },
   "plugins": [
+    {
+      "name": "ai-lead",
+      "description": "AI Team lead — the founder's single entry point. Routes every request to the right specialist (lawyer, accountant, cto, devops, security, product, marketing, sales), combines their answers and shows conflicts, keeps one board of all requests, one agenda of all deadlines, and a company-wide inbox. Not a specialist itself.",
+      "category": "productivity",
+      "source": {
+        "source": "github",
+        "repo": "HPAIF/ai-lead"
+      },
+      "homepage": "https://github.com/HPAIF/ai-lead"
+    },
     {
       "name": "ai-lawyer",
       "description": "In-house legal research assistant: verifies every law against official sources, reviews contracts, keeps legal history, watches legal changes, improves itself. Not a licensed lawyer.",
@@ -26,6 +36,66 @@
         "repo": "HPAIF/ai-accountant"
       },
       "homepage": "https://github.com/HPAIF/ai-accountant"
+    },
+    {
+      "name": "ai-cto",
+      "description": "AI Team tech lead / fractional CTO for founders: records architecture and stack decisions as ADRs, reviews the architecture and code of your products, keeps a tech-debt register and a technical roadmap, weighs build vs buy, and tells you when to bring in human engineers. Works from a private workspace and improves itself from what it learns. Never pushes, merges or deploys without your explicit approval.",
+      "category": "development",
+      "source": {
+        "source": "github",
+        "repo": "HPAIF/ai-cto"
+      },
+      "homepage": "https://github.com/HPAIF/ai-cto"
+    },
+    {
+      "name": "ai-devops",
+      "description": "AI Team DevOps / SRE engineer for founders: keeps an infrastructure inventory, designs CI/CD and release checklists, sets up monitoring and alerting, runs incidents and blameless postmortems, plans backups and disaster recovery, and reviews cloud costs. Works from a private workspace and improves itself from what it learns. Never runs a deploy, migration, deletion or infrastructure change without your explicit approval of that exact action.",
+      "category": "development",
+      "source": {
+        "source": "github",
+        "repo": "HPAIF/ai-devops"
+      },
+      "homepage": "https://github.com/HPAIF/ai-devops"
+    },
+    {
+      "name": "ai-security",
+      "description": "AI Team in-house security engineer for founders: threat models your products (STRIDE), reviews code and configuration against OWASP Top 10 and ASVS, scans dependencies and secrets, drafts security policies (CIS Controls, NIST CSF 2.0), guides incident response, and keeps a private security risk register. Works only on assets the company owns, never prints secrets, reports vulnerabilities privately. Not a certified security auditor.",
+      "category": "security",
+      "source": {
+        "source": "github",
+        "repo": "HPAIF/ai-security"
+      },
+      "homepage": "https://github.com/HPAIF/ai-security"
+    },
+    {
+      "name": "ai-product",
+      "description": "AI Team in-house product manager for founders: synthesises customer research into jobs-to-be-done and opportunity solution trees, frames problems, writes specs and Shape Up pitches, prioritises the roadmap (RICE, Now/Next/Later), defines North Star and input metrics, and keeps an evidence-linked feedback log in a private workspace. Evidence over opinion; never invents customers, quotes or numbers; the founder decides.",
+      "category": "business",
+      "source": {
+        "source": "github",
+        "repo": "HPAIF/ai-product"
+      },
+      "homepage": "https://github.com/HPAIF/ai-product"
+    },
+    {
+      "name": "ai-marketing",
+      "description": "AI Team in-house marketing assistant for founders of early-stage B2B companies: ICP and personas, positioning and messaging, content plans and drafts, website and landing copy, launch plans, channel and campaign reviews. Every claim backed by a source or company fact; legal checks go to the lawyer member. Drafts only — never publishes, posts, sends or buys ads.",
+      "category": "business",
+      "source": {
+        "source": "github",
+        "repo": "HPAIF/ai-marketing"
+      },
+      "homepage": "https://github.com/HPAIF/ai-marketing"
+    },
+    {
+      "name": "ai-sales",
+      "description": "AI Team in-house sales assistant for founders doing founder-led B2B sales: target-account list from the shared ICP, privacy-respecting prospect research from public information, outreach drafts, a pipeline register, discovery-call prep and notes (SPIN, MEDDPICC), proposals and deal reviews. Never sends messages, contacts prospects or commits to prices, discounts or terms.",
+      "category": "business",
+      "source": {
+        "source": "github",
+        "repo": "HPAIF/ai-sales"
+      },
+      "homepage": "https://github.com/HPAIF/ai-sales"
     }
   ]
 }
