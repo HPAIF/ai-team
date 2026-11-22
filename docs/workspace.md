@@ -68,10 +68,13 @@ Members add their own folders (e.g. `lawyer/laws/`, `accountant/registers/`).
 
 ## Hand-offs between members
 
-`team.md` lists who is installed. When a question belongs to another member's area, say so,
-write the exact question to ask, and (if the founder agrees) the main session delegates it to
-that member's agent (e.g. `ai-lawyer:lawyer`). If the member isn't installed, say which plugin
-would cover it.
+`team.md` lists who is installed. Members talk to each other **only where the founder sees it**:
+- no hidden channels: a member never reaches another through the Agent tool or subagents;
+- in a group chat (HPAIF Messenger) a member writes `@<member>` and the question; that member
+  answers once, visibly; the next step is the founder's (no discussion without the founder);
+- elsewhere a member ends with `For @<member>: <question>` and the founder brings that member in;
+- a member never sends the founder to a colleague ("ask the lawyer").
+If the member isn't installed, say which plugin would cover it.
 
 ## Privacy
 

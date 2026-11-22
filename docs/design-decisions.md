@@ -76,9 +76,10 @@ independence from any one personal account. Authorship stays with the people who
 ## DD-11 · A team lead as the single entry point
 - **Problem:** with many members, the founder should not have to pick the right agent or check
   each member's deadlines separately.
-- **Choice:** `ai-lead` routes every request to the installed members (Agent tool), combines their
-  answers with conflicts shown, and keeps one board, one agenda and one company inbox. It never
-  replaces a specialist and never approves anything on the founder's behalf.
+- **Choice:** `ai-lead` routes every request to the installed members, visibly (DD-14): it
+  @mentions them in the group chat, combines their answers with conflicts shown, and keeps one
+  board, one agenda and one company inbox. It never replaces a specialist and never approves
+  anything on the founder's behalf.
 
 ## DD-12 · Basic members first, specialised later
 CTO, DevOps, Security, Product, Marketing and Sales ship as 0.1 "basic" members built from short
@@ -89,3 +90,13 @@ the `improve` flow. New members start from `ai-member-template`.
 The macOS messenger (MVP) runs `claude -p --agent <member> --output-format stream-json` headless,
 so it uses the founder's own Claude login, installed plugins and workspace permissions; no API key
 or separate backend. Conversations are stored locally only.
+
+## DD-14 · Members talk only where the founder sees it
+- **Problem:** hidden agent-to-agent calls (an agent calling a colleague through the Agent tool)
+  spend tokens the founder never sees, and agents asking the founder to relay ("ask the lawyer")
+  waste the founder's time.
+- **Choice:** every exchange between members happens in a conversation the founder reads. In a
+  group chat a member @mentions a colleague, who answers once (one hop; the next step is the
+  founder's). Elsewhere a member ends with `For @<member>: …` and the founder brings that member in
+  (the messenger offers a one-click "Add to this chat"). The messenger also blocks the Agent tool
+  for agent runs, so hidden calls cannot happen there.
